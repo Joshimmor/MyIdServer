@@ -19,7 +19,7 @@ db.once("open", function () {
   console.log("Connected successfully");
 });
 var app = express();
-app.listen(port, function() {
+app.listen(process.env.PORT || port, function() {
   console.log('app started');
 });
 // view engine setup
